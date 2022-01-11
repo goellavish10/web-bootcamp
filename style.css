@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #6df1d5b9;
+	flex-direction: column;
+}
+
+.header {
+	width: 480px;
+	padding: 25px 30px;
+	position: relative;
+	border-radius: 20px;
+	background: white;
+	box-shadow: 0px 6px 15px rgba(12, 10, 10, 0.15);
+}
+
+.header h2 {
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: "Poppins";
+	display: flex;
+	justify-content: center;
+	color: #ad2871;
+	margin-bottom: 10px;
+}
+
+.addBtn {
+	font-size: 1rem;
+	margin: 0 0.5em;
+	border-radius: 2em;
+	padding: 0.75em 1.5em;
+	cursor: pointer;
+	background: none;
+	border: 1px solid;
+	line-height: 1;
+	font-family: "Roboto";
+	color: #ad2871;
+	height: 40px;
+}
+
+.addBtn:hover {
+	color: #fff;
+	background: #ad2871;
+}
+
+#itemTitle {
+	width: 70%;
+	margin: 0 0.3em;
+	border-radius: 2em;
+	padding: 0.75em 1.5em;
+	background: none;
+	border: 1px solid;
+	color: #ad2871;
+	font-size: 1rem;
+	height: 40px;
+	outline: none;
+}
+
+#itemTitle:focus {
+	outline: none;
+}
+
+ul {
+	padding-top: 10px;
+}
+
+ul > li {
+	margin: 0.2em 1em;
+	padding: 10px;
+	list-style: none;
+	border-radius: 10px;
+	color: #00b68eb9;
+	font-weight: 500;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+li:hover {
+	background-color: #6df1d5b9;
+	color: rgb(27, 27, 27);
+}
+
+.fas {
+	cursor: pointer;
+}
+
+@media (max-width: 700px) {
+	.header {
+		width: 380px;
+		padding: 15px 20px;
+	}
+	.header h2 {
+		font-size: 1.5rem;
+	}
+	.addBtn {
+		padding: 0.5rem 1.5em;
+		margin: 0 0.25rem;
+		font-size: 0.8rem;
+	}
+	#itemTitle {
+		width: 60%;
+		padding: 0.5rem 0.5rem;
+		margin: 0 0.25rem;
+		font-size: 0.8rem;
+	}
+}
